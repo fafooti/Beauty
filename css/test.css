@@ -1,0 +1,400 @@
+:root {
+    --color-primary: #A10550;
+    --color-error: #C30000;
+    --color-error-light: #ED2E2E;
+    --color-success: #00966D;
+    --color-success-light: #00BA88;
+    --color-warning: #A9791C;
+    --color-warning-light: #F4B740;
+    --color-neural-bg: #FAF9F5;
+    --color-headings: #000;
+    --color-body: #333333;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.btn {
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    padding: 1rem 3.8rem;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1.4rem;
+    white-space: nowrap;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: #FAF9F5;
+}
+
+.btn--secondary {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn--block {
+    width: 100%;
+    /* 100% of its parent */
+    font-size: 1.6rem;
+}
+
+
+/* dEsktop */
+
+@media screen and (min-width:1000px) {
+    .btn {
+        font-size: 1.6rem;
+    }
+    .btn--block {
+        font-size: 2rem;
+    }
+}
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(40px, auto);
+    gap: 1rem;
+    /* margin-bottom: 1rem; */
+    background-color: #FBEFF2;
+    position: relative;
+    width: 100%;
+}
+
+.second-row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding-top: 2rem;
+    background-color: #3D021E;
+    position: relative;
+}
+
+.third-row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    /* margin-bottom: 2rem; */
+    background-color: #280114;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.fourth-row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    background-color: #14010A;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.first-row .grid__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.first-row .grid__item>p {
+    color: var(--color-primary);
+    padding-left: 0.7rem;
+    font-size: 1.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.first-row .vector>img {
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.second-row .grid__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.second-row .grid__item>h4 {
+    margin: 0.5rem 4rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.second-row .grid__item .footer__list>li {
+    list-style-type: none;
+    padding-top: 0.8rem;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.second-row .right-section>p {
+    color: white;
+    margin: auto 4rem;
+    font-size: 1.3rem;
+}
+
+.second-row .right-section>h4 {
+    margin: 0.5rem 4rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.second-row .grid__item .email__input {
+    background-color: #3D021E;
+    margin: 2rem 3rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    padding: 1.4rem 1.1rem;
+    width: 80%;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-container .icon {
+    display: inline;
+    padding: 10px;
+    min-width: 40px;
+    color: #FBEFF2;
+    position: absolute;
+    left: 80%;
+    top: 30%;
+}
+
+.checkbox-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* padding-left: 1.4rem;
+    padding-top: 2rem; */
+    padding: 2rem 1.7rem;
+    /* text-align: justify; */
+}
+
+.checkbox-container .checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    left: 2.7rem;
+    top: 2rem;
+    height: 15px;
+    width: 15px;
+    background-color: #3D021E;
+    border: 1px solid #FAF9F5;
+}
+
+.checkbox-container>label {
+    margin-left: 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding-left: 3.4rem;
+}
+
+.third-row .grid__item {
+    margin: 2rem;
+}
+
+.third-row .grid__item .left__side .loc-icon>i {
+    color: #FA58A6;
+    margin: 1rem 1.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.third-row .grid__item .left__side .phone-icon>i {
+    color: #FA58A6;
+    margin: 1rem 1.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.third-row .grid__item .left__side>span {
+    color: #FA58A6;
+    margin-left: 1.3rem;
+    display: none;
+}
+
+.third-row .grid__item .left__side {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.third-row .right-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    overflow: hidden;
+}
+
+.third-row .right-side>i {
+    color: #FA58A6;
+    font-size: 2.4rem;
+}
+
+.fourth-row .right-side {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.fourth-row .right-side>i {
+    padding-right: 0.7rem;
+}
+
+.fourth-row .left-side>a {
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+@media screen and (min-width:768px) {
+    .first-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+        width: 100%;
+        gap: 1rem;
+    }
+    .second-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-auto-rows: repeat(auto-fit, minimax(200px, 1fr)); */
+        /* gap: 1rem; */
+        /* margin: 2rem; */
+        width: 100%;
+    }
+    .third-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 100%;
+    }
+    .fourth-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    .first-row .grid__item {
+        margin: 2rem 2rem;
+    }
+    .first-row .grid__item>p {
+        color: var(--color-primary);
+        padding-left: 0.7rem;
+        font-size: 1.5rem;
+    }
+    .first-row .vector>img {
+        object-fit: cover;
+        width: 40px;
+        height: 40px;
+        padding: 0.7rem 1rem;
+    }
+    .second-row .right-section {
+        margin-top: 2rem;
+    }
+    .second-row .left-section {
+        margin-top: -3rem;
+    }
+    .second-row .products {
+        margin-top: -9rem;
+    }
+    .input-container .icon {
+        display: none;
+    }
+    .second-row .grid__item .email__input {
+        background-color: #3D021E;
+        margin: 0.5rem 3rem;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid white;
+        padding: 1.4rem 1.1rem;
+        width: 80%;
+    }
+    .checkbox-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        /* padding-left: 1.7rem;
+        padding-top: 2rem;
+        padding-right: 1rempad */
+        padding: 2rem 1.7rem;
+    }
+    .checkbox-container>label {
+        margin-left: 0.5rem;
+        color: white;
+        font-size: 1.2rem;
+        text-align: justify;
+        /* padding: 2.4rem; */
+    }
+    .third-row .grid__item {
+        margin: 2rem;
+    }
+    .third-row .grid__item .left__side .loc-icon>i,
+    .third-row .grid__item .left__side .phone-icon>i {
+        color: #FA58A6;
+        margin: auto 1.3rem;
+    }
+    .third-row .grid__item .left__side>span {
+        color: #FA58A6;
+        margin-left: 1.3rem;
+        display: inline;
+    }
+    .third-row .grid__item .left__side {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-size: 1.7rem;
+    }
+    .third-row .right-side {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 2.4rem;
+    }
+    .third-row .right-side>i {
+        color: #FA58A6;
+        font-size: 2.4rem;
+    }
+}
